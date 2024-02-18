@@ -34,8 +34,6 @@ class Room(models.Model):
     def __str__(self):
         return self.name
 
-# booking class
-
 
 class Booking(models.Model):
 
