@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # from django.conf.urls import url
-# from strawberry.django.views import GraphQLView
-# from strawberry.schema import schema
+from strawberry.django.views import GraphQLView
+from strawberry.schema import schema
 # from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # url('graphql', GraphQLView.as_view(graphiql=True)),
-    # path('graphql/', GraphQLView.as_view(schema=schema), name='graphql'),
+    path('graphql/', GraphQLView.as_view(schema=schema), name='graphql'),
 ]
