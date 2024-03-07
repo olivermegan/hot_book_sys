@@ -1,7 +1,6 @@
 from django.db import models
-
+# from django_choices_field import TextChoicesField
 # Create your models here.
-from django.db import models
 
 
 class Hotel(models.Model):

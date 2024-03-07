@@ -83,6 +83,11 @@ DATABASES = {
     }
 }
 
+STRAWBERRY_DJANGO = {
+    "FIELD_DESCRIPTION_FROM_HELP_TEXT": True,
+    "TYPE_DESCRIPTION_FROM_MODEL_DOCSTRING": True,
+}
+
 # GRAPHENE = {
 #    "SCHEMA": "django_root.schema.schema"
 # }
