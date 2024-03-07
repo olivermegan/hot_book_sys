@@ -1,6 +1,6 @@
 import strawberry
 import typing
-# from .resolvers import get_rooms
+from .resolvers import get_rooms
 # from strawberry.types import Info
 
 
