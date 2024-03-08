@@ -11,7 +11,10 @@ class HotelType(DjangoObjectType):
 
 
 class Query(graphene.ObjectType):
-    hotels = graphene.String(default_value="Hi!")
+    hotels = graphene.List(HotelType)
+
+    def resolve_all_hotels(root, info):
+        return Hotel.objects.all()
 
 
 schema = graphene.Schema(query=Query)
