@@ -13,7 +13,7 @@ class HotelType(DjangoObjectType):
 class Query(graphene.ObjectType):
     hotels = graphene.List(HotelType)
 
-    def resolve_all_hotels(root, info):
+    def resolve_hotels(root, info):
         return Hotel.objects.all()
 
 
