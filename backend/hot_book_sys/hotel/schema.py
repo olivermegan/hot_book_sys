@@ -7,7 +7,7 @@ from hot_book_sys.hotel.models import Hotel
 class HotelType(DjangoObjectType):
     class Meta:
         model = Hotel
-        fields = ('id', 'name')
+        fields = "__all__"
 
 
 class Query(graphene.ObjectType):
