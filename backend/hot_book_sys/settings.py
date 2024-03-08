@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'strawberry_django',
-    # 'hotel',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
@@ -83,14 +82,10 @@ DATABASES = {
     }
 }
 
-STRAWBERRY_DJANGO = {
-    "FIELD_DESCRIPTION_FROM_HELP_TEXT": True,
-    "TYPE_DESCRIPTION_FROM_MODEL_DOCSTRING": True,
+GRAPHENE = {
+    "SCHEMA": "hot_book_sys.schema.schema"
 }
 
-# GRAPHENE = {
-#    "SCHEMA": "django_root.schema.schema"
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

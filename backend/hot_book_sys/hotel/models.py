@@ -1,9 +1,11 @@
 from django.db import models
 # from django_choices_field import TextChoicesField
+
 # Create your models here.
 
 
 class Hotel(models.Model):
+    id = models.AutoField(primary_key=True)
     staff = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     floor = models.IntegerField()
     friendly_name = models.CharField(max_length=100)
