@@ -1,5 +1,5 @@
 from django.contrib import admin
-from backend.hot_book_sys.hotel.models import Hotel, Room, Booking
+from hot_book_sys.hotel.models import Hotel, Room, Booking
 
 
 # Register your models here.

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
+    'hot_book_sys.hotel',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +84,7 @@ DATABASES = {
 }
 
 GRAPHENE = {
-    "SCHEMA": "hot_book_sys.schema.schema"
+    "SCHEMA": "hot_book_sys.hotel.schema.schema"
 }
 
 

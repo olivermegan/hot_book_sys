@@ -1,5 +1,5 @@
 from strawberry.django.views import GraphQLView
-from ..schema import schema
+from .schema import schema
 from django.shortcuts import render
 from django.urls import path
 from django.http import HttpResponse
