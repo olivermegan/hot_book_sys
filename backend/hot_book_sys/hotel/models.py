@@ -41,7 +41,8 @@ class Booking(models.Model):
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     check_in = models.DateField()
     check_out = models.DateField()
-    num_guests = models.IntegerField()
+    guest_number = models.IntegerField()
+    guest = models.CharField(max_length=100, default=0)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     status = models.CharField(max_length=20, choices=(
         ('pending', 'Pending'),
