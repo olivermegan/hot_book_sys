@@ -15,17 +15,17 @@ class Hotel(models.Model):
     country = models.CharField(max_length=100)
     description = models.TextField(blank=True)
     rating = models.FloatField(default=0.0)
-    num_reviews = models.IntegerField(default=0)
+    review_number = models.IntegerField(default=0)
 
     def __str__(self):
         return self.name
 
 
 class Room(models.Model):
-    hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)
+    # hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)
     unique_identifier = models.IntegerField(default=0)
     floor = models.IntegerField()
-    number_of_beds = models.IntegerField()
+    bed_number = models.IntegerField()
     room_number = models.IntegerField()
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True)
