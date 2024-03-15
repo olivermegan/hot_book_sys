@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'graphene_django',
     'hot_book_sys.hotel',
-    'hot_book_sys.api',
 ]
 
 MIDDLEWARE = [
